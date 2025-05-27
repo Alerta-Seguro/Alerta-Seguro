@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="css/estiloDesktop.css">
     <title>Alerta Seguro</title>
 </head>
+
 <body>
     <div id="wrapper">
         <header>
@@ -18,29 +20,50 @@
                         <img src="img/logo.png" alt="Logo">
                     </a>
                 </div>
-                <!---Nav bar para Tablets e Desktops-->
-                <nav id="nav-links">
-                    <ul>
+                <!---Menu responsivo para celulares-->
+                <div class="menu-off-screen">
+                    <ul id="nav-mobile">
                         <li><a href="index.html">Home</a></li>
+                        <li><a href="solucoes.html">Soluções</a></li>
                         <li><a href="faq.html">FAQ</a></li>
                         <li><a href="integrantes.html">Integrantes</a></li>
+                        <li><a href="alerta.html">Alertas</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <nav>
+                    <div class="menuHam">
+                        <div class="menu-ham barra-top"></div>
+                        <div class="menu-ham barra-mid"></div>
+                        <div class="menu-ham barra-bottom"></div>
+                    </div>
+                </nav>
+                <!---Nav bar para Tablets e Desktops-->
+                <nav class="nav-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="solucoes.html">Soluções</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="integrantes.html">Integrantes</a></li>
+                        <li><a href="alerta.html">Alertas</a></li>
+                        <li><a href="contato.html">Contato</a></li>
                     </ul>
                 </nav>
-        </div>
-    </header>
-    <main>
-        <div id="infHome">
-            <div class="conteudo">
-                <h1>Conheça nosso projeto: Alerta Seguro</h1>
-                <p>BLABLABLA</p>
             </div>
-        </div>
-    </main>
-    <footer>
-        <li><a href="contato.html">Contato</a></li>
-        <p>©2025 Alerta Seguro - Todos os direitos reservados.</p>
-    </footer>
-</div>
+        </header>
+        <main>
+            <div id="infHome">
+                <div class="conteudo">
+                    <h1>Conheça nosso projeto: Alerta Seguro</h1>
+                    <p>BLABLABLA</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>©2025 Alerta Seguro - Todos os direitos reservados.</p>
+        </footer>
+    </div>
     <script src="js/script-menu.js"></script>
 </body>
+
 </html>
