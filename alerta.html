@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estiloSmartphone.css">
+    <link rel="stylesheet" href="css/estiloTablet.css">
+    <link rel="stylesheet" href="css/estiloDesktop.css">
+    <title>Alerta Seguro</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/alerta-seguro-logo.png" alt="Logo">
+                    </a>
+                </div>
+                <!---Menu responsivo para celulares-->
+                <div class="menu-off-screen">
+                    <ul id="nav-mobile">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="solucoes.html">Soluções</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="alerta.html">Alertas</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="integrantes.html">Integrantes</a></li>
+                    </ul>
+                </div>
+                <nav>
+                    <div class="menuHam">
+                        <div class="menu-ham barra-top"></div>
+                        <div class="menu-ham barra-mid"></div>
+                        <div class="menu-ham barra-bottom"></div>
+                    </div>
+                </nav>
+                <!---Nav bar para Tablets e Desktops-->
+                <nav class="nav-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="solucoes.html">Soluções</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="alerta.html">Alertas</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="integrantes.html">Integrantes</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main id="fundo">
+            <div id="alerta">
+                <div class="conteudo1">
+                    <h3>Cadastre-se para receber alertas de desastres naturais na sua região.</h3>
+                    <br>
+                    <p>Fique em segurança! Ao se cadastrar, você receberá notificações antecipadas sobre riscos de desastres naturais, como enchentes, deslizamentos e tempestades, de acordo com a sua localização. A informação certa, no momento certo, pode salvar vidas.</p>
+                    <br>
+                    <p>Preencha o formulário  e ative o seu alerta regional agora mesmo.</p>
+                </div>
+                <div class="formulario">
+                    <label>Nome Completo
+                        <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Digite aqui...">
+                    </label>
+                    <br>
+                    <label>Número (Telefone)
+                        <input type="tel" name="numTelefone" id="numTelefone" placeholder="Digite aqui...">
+                    </label>
+                    <br>
+                    <label>Email
+                        <input type="text" name="email" id="email" placeholder="Digite aqui...">
+                    </label>
+                    <br>
+                    <label>Região
+                        <select name="regiao">
+                            <option value="" selected>Selecione</option>
+                            <option value="ZN">Zona Norte</option>
+                            <option value="ZC">Zona Centro</option>
+                            <option value="ZL">Zona Leste</option>
+                            <option value="ZO">Zona Oeste</option>
+                            <optio value="ZS">Zona Sul</optio>
+                        </select>
+                    </label>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>©2025 Alerta Seguro - Todos os direitos reservados.</p>
+        </footer>
+    </div>
+    <script src="js/script-menu.js"></script>
+</body>
+
+</html>
