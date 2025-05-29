@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estiloSmartphone.css">
+    <link rel="stylesheet" href="css/estiloTablet.css">
+    <link rel="stylesheet" href="css/estiloDesktop.css">
+    <title>Alerta Seguro</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/alerta-seguro-logo.png" alt="Logo">
+                    </a>
+                </div>
+                <!---Menu responsivo para celulares-->
+                <div class="menu-off-screen">
+                    <ul id="nav-mobile">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="solucoes.html">Soluções</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="alerta.html">Alertas</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="integrantes.html">Integrantes</a></li>
+                    </ul>
+                </div>
+                <nav>
+                    <div class="menuHam">
+                        <div class="menu-ham barra-top"></div>
+                        <div class="menu-ham barra-mid"></div>
+                        <div class="menu-ham barra-bottom"></div>
+                    </div>
+                </nav>
+                <!---Nav bar para Tablets e Desktops-->
+                <nav class="nav-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="solucoes.html">Soluções</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="alerta.html">Alertas</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="integrantes.html">Integrantes</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main id="fundo">
+            <div id="quadro-atras">
+                <div class="faleConosco">
+                    <h1>Fale Conosco</h1>
+                    <br>
+                    <p>Tem alguma dúvida, sugestão ou precisa de ajuda? Estamos aqui para ouvir você!</p>
+                </div>
+                <br>
+                <div class="container-lado-a-lado">
+                    <div class="lado-a-lado email">
+                        <h2>E-mail:</h2>
+                        <br>
+                        <p>Envie um e-mail para:</p>
+                        <br>
+                        <p>Duvidas@alertaseguro.com</p>
+                        <br>
+                        <p>Responderemos o mais rápido possível.</p>
+                    </div>
+                    <div class="lado-a-lado mensagem">
+                        <h2>Mensagem Direta:</h2>
+                        <p>Preencha o campo abaixo e nos envie sua mensagem. Nossa equipe entrará em contato com você em breve.</p>
+                        <form name="frmMensagem" id="frmMensagem">
+                            <label for="informeEmail">Informe o seu E-mail:
+                                <br>
+                                <input type="text" name="informeEmail" id="informeEmail"> 
+                            </label>
+                            <br>
+                            <label for="mensagem">Digite no campo abaixo a sua mensagem:
+                                <textarea name="mensagem" id="mensagem" cols="100" rows="10"></textarea>
+                            </label>
+                        <button type="submit" class="enviar1">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>©2025 Alerta Seguro - Todos os direitos reservados.</p>
+        </footer>
+    </div>
+    <script src="js/script-menu.js"></script>
+    <script src="js/contato.js"></script>
+</body>
+<!--Modal de Envio-->
+<div id="envio-sucesso" class="modal1">
+    <div class="modal-content1">
+        <h2>Mensagem enviada com sucesso</h2>
+        <br> 
+        <br>
+        <img src="img/check.png">
+        <br>
+        <br>
+        <p>Recebemos sua mensagem e em breve nossa equipe entrará em contato com você. Obrigado por nos procurar!</p>
+        <br>
+        <button id="fechar-modal1">Fechar</button>
+    </div>
+</div>
+</html>

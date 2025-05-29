@@ -54,35 +54,50 @@
         <main id="fundo">
             <div id="alerta">
                 <div class="conteudo1">
-                    <h3>Cadastre-se para receber alertas de desastres naturais na sua região.</h3>
-                    <br>
-                    <p>Fique em segurança! Ao se cadastrar, você receberá notificações antecipadas sobre riscos de desastres naturais, como enchentes, deslizamentos e tempestades, de acordo com a sua localização. A informação certa, no momento certo, pode salvar vidas.</p>
-                    <br>
-                    <p>Preencha o formulário  e ative o seu alerta regional agora mesmo.</p>
+                    <div class="descricao">
+                        <h3>Cadastre-se para receber alertas de desastres naturais na sua região.</h3>
+                        <br>
+                        <br>
+                        <br>
+                        <p>Fique em segurança! Ao se cadastrar, você receberá notificações antecipadas sobre riscos de desastres naturais, como enchentes, deslizamentos e tempestades, de acordo com a sua localização. A informação certa, no momento certo, pode salvar vidas.</p>
+                        <br>
+                        <br>
+                        <br>
+                        <p>Preencha o formulário  e ative o seu alerta regional agora mesmo.</p>
+                    </div>
                 </div>
-                <div class="formulario">
-                    <label>Nome Completo
-                        <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Digite aqui...">
-                    </label>
-                    <br>
-                    <label>Número (Telefone)
-                        <input type="tel" name="numTelefone" id="numTelefone" placeholder="Digite aqui...">
-                    </label>
-                    <br>
-                    <label>Email
-                        <input type="text" name="email" id="email" placeholder="Digite aqui...">
-                    </label>
-                    <br>
-                    <label>Região
-                        <select name="regiao">
-                            <option value="" selected>Selecione</option>
-                            <option value="ZN">Zona Norte</option>
-                            <option value="ZC">Zona Centro</option>
-                            <option value="ZL">Zona Leste</option>
-                            <option value="ZO">Zona Oeste</option>
-                            <optio value="ZS">Zona Sul</optio>
-                        </select>
-                    </label>
+                <div class="conteudo1">
+                    <form name="alerta" id="alarme">
+                        <div class="frmAlerta">
+                            <label for="nomeCompleto">Nome Completo
+                                <br>
+                                <input type="text" name="nomeCompleto" id="nomeCompleto">
+                            </label>
+                            <br>
+                            <label for="numTelefone">Número (Telefone)
+                                <br>
+                                <input type="tel" name="numTelefone" id="numTelefone">
+                            </label>
+                            <br>
+                            <label for="email">Email
+                                <br>
+                                <input type="text" name="email" id="email">
+                            </label>
+                            <br>
+                            <label>Região
+                                <br>
+                                <select name="regiao">
+                                    <option value="" selected>Selecione</option>
+                                    <option value="ZN">Zona Norte</option>
+                                    <option value="ZC">Zona Centro</option>
+                                    <option value="ZL">Zona Leste</option>
+                                    <option value="ZO">Zona Oeste</option>
+                                    <option value="ZS">Zona Sul</option>
+                                </select>
+                            </label>
+                        </div>
+                        <button type="submit" class="enviar">Enviar</button>
+                    </form>
                 </div>
             </div>
         </main>
@@ -91,6 +106,20 @@
         </footer>
     </div>
     <script src="js/script-menu.js"></script>
+    <script src="js/cadastro.js"></script>
 </body>
-
+<!--Modal de cadastro-->
+<div id="cdt-sucesso" class="modal">
+    <div class="modal-content">
+        <h2>Cadastro de Alerta realizado com sucesso!</h2>
+        <br> 
+        <br>
+        <img src="img/check.png">
+        <br>
+        <br>
+        <p>A partir de agora, você receberá notificações sobre desastres naturais, como inundações, queimadas e outros eventos. Também enviaremos orientações sobre como agir em cada situação para manter sua segurança.</p>
+        <br>
+        <button id="fechar-modal">Fechar</button>
+    </div>
+</div>
 </html>
