@@ -20,8 +20,8 @@
                         <img src="img/alerta-seguro-logo.png" alt="Logo">
                     </a>
                 </div>
-                <!---Menu responsivo para celulares-->
-                <nav class="off-screen">
+                <!---Menu responsivo para telas pequenas-->
+                <nav class="nav-off-screen">
                     <ul id="nav-mobile">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="solucoes.html">Soluções</a></li>
@@ -31,12 +31,14 @@
                         <li><a href="integrantes.html">Integrantes</a></li>
                     </ul>
                 </nav>
-                        <div class="menu-ham" onclick="myFunction(this)">
-                            <div class="bar1"></div>
-                            <div class="bar2"></div>
-                            <div class="bar3"></div>
-                        </div>
-                <!---Nav bar para Tablets e Desktops-->
+                <div id="menu">
+                    <div class="menu-ham">
+                        <div class="ham-bar bar1"></div>
+                        <div class="ham-bar bar2"></div>
+                        <div class="ham-bar bar3"></div>
+                    </div>
+                </div>
+                <!---Nav bar para telas médias e telas grandes-->
                 <nav class="nav-links">
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -50,13 +52,16 @@
             </div>
         </header>
         <main id="fundo">
-            <div class="frase">
-                <img src="img/frase-banner.png" alt="Frase do banner">
-            </div>
+            <div id="home">
+                <div class="frase">
+                    <img src="img/frase-banner.png" alt="Frase do banner">
+                </div>
                 <div class="conteudo">
                     <h1>Bem-vindo ao Alerta Seguro</h1>
+                    <br>
                     <p>O Alerta Seguro é um sistema de apoio à população em situações de risco de desastres naturais. Aqui, você pode se cadastrar para receber alertas antecipados, acessar informações importantes sobre sua região, tirar dúvidas com nosso assistente virtual e consultar uma central de perguntas frequentes. Tudo de forma simples, rápida e acessível.</p>
                 </div>
+            </div>
         </main>
         <footer>
             <p>©2025 Alerta Seguro - Todos os direitos reservados.</p>
