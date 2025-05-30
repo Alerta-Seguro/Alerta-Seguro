@@ -1,22 +1,18 @@
-/*Responsivo pra telas pequenas*/
+/*Responsividade pra telas pequenas*/
 @media (max-width: 599.9px){
-    #wrapper{
-        background-color: #fff;
+    .nav-links{
+        display: none;
     }
-    .logo img{
-        height:60px;
-        width: 60px;
-    }
-    .menu-off-screen{
+    .off-screen{
         position: fixed;
         top: 0;
-        right: -80%;
-        background-color: lightblue;
+        right: -75%;
+        background-color: #fff;
         height: 100vh;
-        width: 80%;
+        width: 75%;
         transition: right .3s;
         float: right;
-        max-width: 80%;
+        max-width: 75%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -24,20 +20,60 @@
         text-align: center;
         font-size: 25px;
     }
-    .menu-off-screen.active{
-        right: 0;
-    }
-    nav{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+    .off-screen.active{
         right: 0;
     }
     #nav-mobile{
         width: 100%;
         height: 40px;
-        background-color: blue;
+        background-color: #d9d9d9;
         display: flex;
-        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        list-style: none;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+    #nav-mobile li a{
+        color: #09a870;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 5px 10px;
+        display: block;
+    }
+    #nav-mobile li a:hover{
+        background-color: #09a870;
+        color: #000;
+        border-radius: 5px;
+    }
+    .menu-ham{
+        display: inline-block;
+        cursor: pointer;
+    }
+    .bar1, 
+    .bar2,
+    .bar3{
+        width: 30px;
+        height: 5px;
+        background-color: #1f7286;
+        margin: 6px 0;
+        transition: .4s;
+    }
+    .change .bar1{
+        transform: translate(0, 11px) rotate(-315deg);
+    }
+    .change .bar2{
+        opacity: 0;
+    }
+    .change .bar3{
+        transform: translate(0, -11px) rotate(-225deg);
+    }
+}
+@media (min-width: 600px) and (max-width: 767.9px){
+    .nav-links{
+        display: none;
     }
 }

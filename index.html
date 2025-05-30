@@ -21,7 +21,7 @@
                     </a>
                 </div>
                 <!---Menu responsivo para celulares-->
-                <div class="menu-off-screen">
+                <nav class="off-screen">
                     <ul id="nav-mobile">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="solucoes.html">Soluções</a></li>
@@ -30,14 +30,12 @@
                         <li><a href="contato.html">Contato</a></li>
                         <li><a href="integrantes.html">Integrantes</a></li>
                     </ul>
-                </div>
-                <nav>
-                    <div class="menuHam">
-                        <div class="menu-ham barra-top"></div>
-                        <div class="menu-ham barra-mid"></div>
-                        <div class="menu-ham barra-bottom"></div>
-                    </div>
                 </nav>
+                        <div class="menu-ham" onclick="myFunction(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
                 <!---Nav bar para Tablets e Desktops-->
                 <nav class="nav-links">
                     <ul>
@@ -51,7 +49,10 @@
                 </nav>
             </div>
         </header>
-        <main id="infHome">
+        <main id="fundo">
+            <div class="frase">
+                <img src="img/frase-banner.png" alt="Frase do banner">
+            </div>
                 <div class="conteudo">
                     <h1>Bem-vindo ao Alerta Seguro</h1>
                     <p>O Alerta Seguro é um sistema de apoio à população em situações de risco de desastres naturais. Aqui, você pode se cadastrar para receber alertas antecipados, acessar informações importantes sobre sua região, tirar dúvidas com nosso assistente virtual e consultar uma central de perguntas frequentes. Tudo de forma simples, rápida e acessível.</p>
@@ -61,7 +62,7 @@
             <p>©2025 Alerta Seguro - Todos os direitos reservados.</p>
         </footer>
     </div>
-    <script src="js/script-menu.js"></script>
+    <script src="js/menu-hamburguer.js"></script>
 </body>
 
 </html>

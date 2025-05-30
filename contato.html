@@ -21,7 +21,7 @@
                     </a>
                 </div>
                 <!---Menu responsivo para celulares-->
-                <div class="menu-off-screen">
+                <nav class="nav-off-screen">
                     <ul id="nav-mobile">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="solucoes.html">Soluções</a></li>
@@ -30,14 +30,14 @@
                         <li><a href="contato.html">Contato</a></li>
                         <li><a href="integrantes.html">Integrantes</a></li>
                     </ul>
-                </div>
-                <nav>
+                </nav>
+                <div id="menu">
                     <div class="menuHam">
                         <div class="menu-ham barra-top"></div>
                         <div class="menu-ham barra-mid"></div>
                         <div class="menu-ham barra-bottom"></div>
                     </div>
-                </nav>
+                </div>
                 <!---Nav bar para Tablets e Desktops-->
                 <nav class="nav-links">
                     <ul>
@@ -52,16 +52,17 @@
             </div>
         </header>
         <main id="fundo">
-            <div id="quadro-atras">
-                <div class="faleConosco">
-                    <h1>Fale Conosco</h1>
+            <div id="contato">
+                <div class="lado-a-lado">
+                    <div class="fale">
+                        <h1>Fale Conosco</h1>
+                        <br>
+                        <p>Tem alguma dúvida, sugestão ou precisa de ajuda? Estamos aqui para ouvir você!</p>
+                    </div>
                     <br>
-                    <p>Tem alguma dúvida, sugestão ou precisa de ajuda? Estamos aqui para ouvir você!</p>
-                </div>
-                <br>
-                <div class="container-lado-a-lado">
-                    <div class="lado-a-lado email">
-                        <h2>E-mail:</h2>
+                    <br>
+                    <div class="e-mail">
+                        <h1>E-mail:</h1>
                         <br>
                         <p>Envie um e-mail para:</p>
                         <br>
@@ -69,18 +70,22 @@
                         <br>
                         <p>Responderemos o mais rápido possível.</p>
                     </div>
-                    <div class="lado-a-lado mensagem">
+                </div>
+                <div class="lado-a-lado">
+                    <div class="mensagem">
                         <h2>Mensagem Direta:</h2>
+                        <br>
                         <p>Preencha o campo abaixo e nos envie sua mensagem. Nossa equipe entrará em contato com você em breve.</p>
-                        <form name="frmMensagem" id="frmMensagem">
-                            <label for="informeEmail">Informe o seu E-mail:
-                                <br>
-                                <input type="text" name="informeEmail" id="informeEmail"> 
-                            </label>
+                    </div>    
+                    <form name="frmMensagem" id="frmMensagem">
+                        <label>Informe o seu E-mail:
                             <br>
-                            <label for="mensagem">Digite no campo abaixo a sua mensagem:
-                                <textarea name="mensagem" id="mensagem" cols="100" rows="10"></textarea>
-                            </label>
+                            <input type="text" name="informeEmail" id="informeEmail"> 
+                        </label>
+                        <label>Digite no campo abaixo a sua mensagem:
+                            <br>
+                            <textarea name="mensagem" id="mensagem" cols="100" rows="10"></textarea>
+                        </label>
                         <button type="submit" class="enviar1">Enviar</button>
                         </form>
                     </div>

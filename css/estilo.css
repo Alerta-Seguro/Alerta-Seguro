@@ -13,7 +13,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 5px;
+    padding: 5px 10px;
 }
 header{
     height: 100px;
@@ -44,49 +44,10 @@ header .nav-links ul li a:hover{
     color: #fff;
     border-radius: 5px;
 }
-footer{
-    width: 100%;
-    height:80px;
-    text-align: center;
-    padding: 20px 0;
-    background: #fff;
-    color: #1F7286;
-    font-size: 16px;
-    position: relative;
-    bottom: 0;
-}
-footer p{
-    text-align: center;
-}
-/*******/
-/*index*/
-/*******/
-#infHome{
-    background-image: url('/img/banner.png');
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    color: #fff;
-    text-align: right;
-    padding: 20px;
-}
-.conteudo{
-    background: rgba(252, 252, 252, 0.85);
-    color:#000;
-    padding: 20px;
-    border-radius: 10px;
-    width: 55%;
-    text-align: center;
-    align-items: center;
-}
-/**********/
-/*solucoes*/
-/**********/
 #fundo{
     background-image: url('/img/banner-clean.png');
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
@@ -97,6 +58,37 @@ footer p{
     text-align: right;
     padding: 20px;
 }
+footer{
+    width: 100%;
+    height:80px;
+    background: #fff;
+    color: #1F7286;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+footer p{
+    text-align: center;
+}
+
+/*******/
+/*index*/
+/*******/
+.conteudo{
+    background: rgba(252, 252, 252, 0.85);
+    color:#000;
+    padding: 20px;
+    border-radius: 10px;
+    width: 55%;
+    text-align: center;
+    align-items: center;
+}
+
+/**********/
+/*solucoes*/
+/**********/
 .infOcorrencias{
     padding: 15px;
     width: 100%;
@@ -116,7 +108,7 @@ footer p{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 525px;
+    height: 545px;
 }
 .ocorrido h3{
     margin: 0;
@@ -180,17 +172,6 @@ footer p{
 /*****/
 /*faq*/
 /*****/
-#fundo{
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-align: right;
-    padding: 20px;
-}
 .faq{
     justify-content: center;
     padding: 100px;
@@ -209,28 +190,16 @@ footer p{
     font-weight: bold;
     font-size: 25px;
     display: block;
-    border-radius: 10px;
+    border-radius: 4px;
     padding: 10px;
 }
 .faq-itens a:hover{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.75);
     color:#fff;
 }
 /*************/
 /*faq-paginas*/
 /*************/
-#fundo{
-    background-image: url('/img/banner-clean.png');
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-align: right;
-    padding: 20px;
-}
 #quadro{
     display: flex;
     flex-direction: column;
@@ -254,40 +223,41 @@ footer p{
     border-radius: 10px;
     min-width: 100%;
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 16px;
 }
 .voltar{
-    border-radius: 10px;
+    margin-top: 10px;
+    height: 40px;
+    width: 10%;
+    background-color: rgba(252, 252, 252, 0.75);
+    color: #000;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 .voltar a{
     padding: 5px 10px;
-    border-radius: 10px;
-    text-decoration: none;
-    background: rgba(252, 252, 252, 0.5);
+    border-radius: 4px;
     color: #000;
+    text-decoration: none;
     text-align: center;
     display: block;
     font-size: 16px;
 }
 .voltar a:hover{
-    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
+}
+.voltar:hover{
+    margin-top: 10px;
+    height: 40px;
+    width: 10%;
+    background-color: rgba(0, 0, 0, 0.75)
 }
 /********/
 /*alerta*/
 /********/
-#fundo{
-    background-image: url('/img/banner-clean.png');
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-align: right;
-    padding: 20px;
-}
 #alerta{
     padding: 15px;
     width: 100%;
@@ -325,7 +295,7 @@ footer p{
 }
 .frmAlerta{
     padding: 30px;
-    width: 90%;
+    width: 100%;
     display: flex;
     border-radius: 10px;
     flex-direction: column;
@@ -371,7 +341,7 @@ footer p{
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.85);
   justify-content: center;
   align-items: center;
 }
@@ -387,7 +357,7 @@ footer p{
     font-size: 24px;
 }
 .modal-content p{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 }
 .modal-content button {
@@ -395,7 +365,7 @@ footer p{
   padding: 8px 16px;
   border: none;
   background-color: #1F7286;
-  color: white;
+  color: #fff;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
@@ -403,52 +373,66 @@ footer p{
 .modal-content button:hover {
   background-color: rgba(0, 0, 0, 0.9);
 }
+
 /*********/
 /*Contato*/
 /*********/
-#fundo{
-    background-image: url('/img/banner-clean.png');
-    background-repeat: no-repeat;
-    background-size: center;
-    background-position: center;
-    height: 100vh;
+#contato{
+    padding: 15px;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    padding: 20px;
+    justify-content: space-between;
 }
-#quadro-atras{
-    background: rgba(252, 252, 252, 0.75);
-    padding: 25px;
-    width: 90%;
+.lado-a-lado{
+    flex:1;
+    color:#000;
+    padding: 20px;
+    margin: 10px;
+    background: rgba(252, 252, 252, 0.85);
+    box-shadow: 0 4px 8px rgba(252, 252, 252, 0.35);
+    transition: transform 0.3s;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-.faleConosco{
+.fale{
+    padding: 10px;
     width: 100%;
-    color: #000;
-    text-align: center;
-}
-.container-lado-a-lado{
     display: flex;
-    gap: 20px;
-    justify-content: space-between;
-    width: 100%;
-}
-.lado-a-lado{
-    padding: 20px;
     border-radius: 10px;
-    flex: 1 1 50%;
-    color: #000;
-}
-.email h2{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
-.email p{
+.fale h1{
+    font-size: 24px;
+}
+.fale p{
+    font-size: 16px;
+}
+.e-mail{
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+}
+.e-mail h1{
+    text-align: center;
+    font-size: 24px;
+}
+.e-mail p{
+    font-size: 16px;
     text-align: start;
+}
+.mensagem{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
 }
 .mensagem h2{
     text-align: center;
@@ -456,7 +440,9 @@ footer p{
 .mensagem p{
     text-align: start;
 }
-#frmMessage{
+#frmMensagem{
+    justify-content: center;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -474,16 +460,16 @@ footer p{
     resize: none;
 }
 #frmMensagem .enviar1{
-    margin-top: 20px;
+    display: block;
+    margin: 20px auto;
     height: 40px;
-    width: 30%;
+    width: 20%;
     background-color: #fff;
     color: #000;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     border: none;
-    border-radius: 12px;
-    cursor: pointer;
+    border-radius: 4px;
     transition: background-color 0.3s ease;
 }
 #frmMensagem .enviar1:hover{
@@ -498,7 +484,7 @@ footer p{
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.85);
   justify-content: center;
   align-items: center;
 }
@@ -508,13 +494,13 @@ footer p{
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  width: 55%;
+  width: 50%;
 }
 .modal-content1 h2{
     font-size: 24px;
 }
 .modal-content1 p{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 }
 .modal-content1 button {
@@ -522,7 +508,7 @@ footer p{
   padding: 8px 16px;
   border: none;
   background-color: #1F7286;
-  color: white;
+  color: #fff;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
@@ -530,21 +516,10 @@ footer p{
 .modal-content1 button:hover {
   background-color: rgba(0, 0, 0, 0.9);
 }
+
 /*************/
 /*integrantes*/
 /*************/
-#fundo{
-    background-image: url('/img/banner-clean.png');
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    text-align: right;
-    padding: 20px;
-}
 .integrantes{
     padding: 15px;
     width: 100%;
