@@ -17,7 +17,7 @@
             <div class="container">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="img/alerta-seguro-logo.png" alt="Logo">
+                        <img src="img/alerta-seguro-logo.png" alt="Logo do site Alerta Seguro">
                     </a>
                 </div>
                 <!---Menu responsivo para celulares-->
@@ -72,21 +72,24 @@
                             <label for="nomeCompleto">Nome Completo
                                 <br>
                                 <input type="text" name="nomeCompleto" id="nomeCompleto">
+                                <span id="erroNome" class="erro"></span>
                             </label>
                             <br>
                             <label for="numTelefone">Número (Telefone)
                                 <br>
                                 <input type="tel" name="numTelefone" id="numTelefone">
+                                <span id="erroTelefone" class="erro"></span>
                             </label>
                             <br>
                             <label for="email">Email
                                 <br>
                                 <input type="text" name="email" id="email">
+                                <span id="erroEmail" class="erro"></span>
                             </label>
                             <br>
                             <label>Região
                                 <br>
-                                <select name="regiao">
+                                <select name="regiao" id="regiao">
                                     <option value="" selected>Selecione</option>
                                     <option value="ZN">Zona Norte</option>
                                     <option value="ZC">Zona Centro</option>
@@ -94,9 +97,10 @@
                                     <option value="ZO">Zona Oeste</option>
                                     <option value="ZS">Zona Sul</option>
                                 </select>
+                                <span id="erroRegiao" class="erro"></span>
                             </label>
                         </div>
-                        <button type="submit" class="enviar">Enviar</button>
+                        <button type="submit" onclick="validar()" class="enviar">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -107,6 +111,7 @@
     </div>
     <script src="js/menu-hamburguer.js"></script>
     <script src="js/cadastro.js"></script>
+    <script src="js/form-alerta.js"></script>
 </body>
 <!--Modal de cadastro-->
 <div id="cdt-sucesso" class="modal">
