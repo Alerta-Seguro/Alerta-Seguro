@@ -12,7 +12,6 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        right:0;
     }
     .menu-ham{
         height: 40px;
@@ -136,12 +135,20 @@
         padding: 5px;
         width: 95%;
     }
+    .prox-pag{
+        justify-content: center;
+        margin: 30px 0;
+    }
+    .bt1 {
+        margin: 0 auto;
+        padding: 10px;
+    }
     /*FAQ*/
     .faq{
         width: 100%;
     }
     #quadro{
-        width: 95%;
+        width: 100%;
     }
     .perguntas-respostas{
         padding: 5px 10px;
@@ -155,6 +162,7 @@
     }
     /*Contato*/
     #contato{
+        width: 90%;
         flex-direction: column;
     }
     .lado-a-lado{
@@ -169,6 +177,7 @@
     }
     /*Integrantes*/
     .integrantes{
+        width: 85%;
         flex-direction: column;
     }
 }
@@ -313,7 +322,7 @@
         width: 100%;
     }
     #quadro{
-        width: 95%;
+        width: 100%;
     }
     .perguntas-respostas{
         padding: 5px 10px;
@@ -327,6 +336,7 @@
     }
     /*Contato*/
     #contato{
+        width: 90%;
         flex-direction: column;
     }
     .lado-a-lado{
@@ -341,6 +351,7 @@
     }
     /*Integrantes*/
     .integrantes{
+        width: 80%;
         flex-direction: column;
     }
 }
