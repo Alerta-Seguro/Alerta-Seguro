@@ -125,5 +125,18 @@
             <button id="fechar-modal">Fechar</button>
         </div>
     </div>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPage = window.location.pathname.split("/").pop();
+    if (!currentPage) return;
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('ativa');
+      }
+    });
+  });
+</script>
+
 </body>
 </html>

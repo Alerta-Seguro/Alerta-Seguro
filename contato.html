@@ -97,6 +97,19 @@
     </div>
     <script src="js/menu-hamburguer.js"></script>
     <script src="js/contato.js"></script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPage = window.location.pathname.split("/").pop();
+    if (!currentPage) return;
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('ativa');
+      }
+    });
+  });
+</script>
+
 </body>
 <!--Modal de Envio-->
 <div id="envio-sucesso" class="modal1">

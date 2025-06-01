@@ -75,6 +75,14 @@ footer p{
     text-align: center;
 }
 
+/****ESTILO LINK DE NAVEGAÇÃO***/
+a.ativa {
+  color: #e63946;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
 /*******/
 /*index*/
 /*******/
@@ -603,4 +611,9 @@ footer p{
 }
 .link1:hover{
     transform: translateY(-5px);
+}
+a.ativa {
+  color: #e63946;
+  font-weight: bold;
+  text-decoration: underline;
 }
