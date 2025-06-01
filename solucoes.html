@@ -21,7 +21,7 @@
                     </a>
                 </div>
                 <!---Menu responsivo para celulares-->
-               <nav class="nav-off-screen">
+                <nav class="nav-off-screen">
                     <ul id="nav-mobile">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="solucoes.html">Soluções</a></li>
@@ -55,18 +55,28 @@
             <div class="infOcorrencias">
                 <div class="ocorrido">
                     <h3>Enchentes e Inundações</h3>
-                    <img src="img/inundacoes.png" alt="imagem de uma jovem segurando um cachorro por conta de uma inundação">
-                    <p>Enchentes acontecem quando a água da chuva ou de rios invade áreas que normalmente são secas, causando alagamentos. Quando isso ocorrer, fique atento aos avisos das autoridades e não atravesse áreas alagadas. Procure lugares altos e seguros para se proteger. Tenha sempre um kit de emergência com água, comida e remédios.</p>
+                    <img src="img/inundacoes.png"
+                        alt="imagem de uma jovem segurando um cachorro por conta de uma inundação">
+                    <p>Enchentes acontecem quando a água da chuva ou de rios invade áreas que normalmente são secas,
+                        causando alagamentos. Quando isso ocorrer, fique atento aos avisos das autoridades e não
+                        atravesse áreas alagadas. Procure lugares altos e seguros para se proteger. Tenha sempre um kit
+                        de emergência com água, comida e remédios.</p>
                 </div>
                 <div class="ocorrido">
                     <h3>Deslizamentos de Terra</h3>
                     <img src="img/deslizamento-terra.png" alt="imagem de um deslizamento de terra">
-                    <p>Deslizamentos são movimentos de terra ou pedras que descem encostas, geralmente após muita chuva, podendo destruir casas e bloquear ruas. Se ouvir barulhos estranhos ou ver rachaduras no chão perto de morros, saia do local imediatamente. Evite ficar perto de morros e siga as orientações dos socorristas para sua segurança.</p>
+                    <p>Deslizamentos são movimentos de terra ou pedras que descem encostas, geralmente após muita chuva,
+                        podendo destruir casas e bloquear ruas. Se ouvir barulhos estranhos ou ver rachaduras no chão
+                        perto de morros, saia do local imediatamente. Evite ficar perto de morros e siga as orientações
+                        dos socorristas para sua segurança.</p>
                 </div>
                 <div class="ocorrido">
                     <h3>Secas</h3>
                     <img src="img/seca.png" alt="imagem de um território em período de seca">
-                    <p>A seca é a falta prolongada de chuva, que pode causar falta de água para beber, plantar e para os animais. Durante a seca, economize água em casa fechando a torneira ao escovar os dentes e reutilizando água sempre que possível. Fique atento às recomendações da prefeitura e participe das campanhas de economia.</p>
+                    <p>A seca é a falta prolongada de chuva, que pode causar falta de água para beber, plantar e para os
+                        animais. Durante a seca, economize água em casa fechando a torneira ao escovar os dentes e
+                        reutilizando água sempre que possível. Fique atento às recomendações da prefeitura e participe
+                        das campanhas de economia.</p>
                 </div>
             </div>
             <div class="prox-pag">
@@ -82,18 +92,23 @@
         </footer>
     </div>
     <script src="js/menu-hamburguer.js"></script>
+    <script src="js/acessibilidade.js"></script>
+    <div id="controle-fonte" aria-label="Controle de tamanho da fonte">
+        <button id="aumentarFonte" aria-label="Aumentar tamanho da fonte">A+</button>
+        <button id="diminuirFonte" aria-label="Diminuir tamanho da fonte">A-</button>
+    </div>
     <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const currentPage = window.location.pathname.split("/").pop();
-    if (!currentPage) return;
-    const navLinks = document.querySelectorAll('nav ul li a');
-    navLinks.forEach(link => {
-      if (link.getAttribute('href') === currentPage) {
-        link.classList.add('ativa');
-      }
-    });
-  });
-</script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentPage = window.location.pathname.split("/").pop();
+            if (!currentPage) return;
+            const navLinks = document.querySelectorAll('nav ul li a');
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('ativa');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

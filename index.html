@@ -59,7 +59,10 @@
                 <div class="conteudo">
                     <h1>Bem-vindo ao Alerta Seguro</h1>
                     <br>
-                    <p>O Alerta Seguro é um sistema de apoio à população em situações de risco de desastres naturais. Aqui, você pode se cadastrar para receber alertas antecipados, acessar informações importantes sobre sua região, tirar dúvidas com nosso assistente virtual e consultar uma central de perguntas frequentes. Tudo de forma simples, rápida e acessível.</p>
+                    <p>O Alerta Seguro é um sistema de apoio à população em situações de risco de desastres naturais.
+                        Aqui, você pode se cadastrar para receber alertas antecipados, acessar informações importantes
+                        sobre sua região, tirar dúvidas com nosso assistente virtual e consultar uma central de
+                        perguntas frequentes. Tudo de forma simples, rápida e acessível.</p>
                 </div>
             </div>
         </main>
@@ -68,18 +71,23 @@
         </footer>
     </div>
     <script src="js/menu-hamburguer.js"></script>
+    <script src="js/acessibilidade.js"></script>
+    <div id="controle-fonte" aria-label="Controle de tamanho da fonte">
+        <button id="aumentarFonte" aria-label="Aumentar tamanho da fonte">A+</button>
+        <button id="diminuirFonte" aria-label="Diminuir tamanho da fonte">A-</button>
+    </div>
     <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const currentPage = window.location.pathname.split("/").pop();
-    if (!currentPage) return;
-    const navLinks = document.querySelectorAll('nav ul li a');
-    navLinks.forEach(link => {
-      if (link.getAttribute('href') === currentPage) {
-        link.classList.add('ativa');
-      }
-    });
-  });
-</script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentPage = window.location.pathname.split("/").pop();
+            if (!currentPage) return;
+            const navLinks = document.querySelectorAll('nav ul li a');
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('ativa');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="css/estiloDesktop.css">
     <title>Alerta Seguro Integrantes</title>
 </head>
+
 <body>
     <div id="wrapper">
         <header>
@@ -55,17 +57,18 @@
                     <img src="img/acfm.jpeg" alt="imagem da integrante Ana Cláudia Fernandez Martins">
                     <h3>Ana Claudia Fernandes Martins</h3>
                     <p>RM: 561190</p>
-                    <p>Turma: 1TDSA</p>    
+                    <p>Turma: 1TDSA</p>
                     <br>
                     <div class="link-integrante">
                         <a href="https://www.linkedin.com/in/ana-claudia-fernandes-martins/" class="link">
-                            <img src="img/linkedin.png" alt="logo com o link do linkedin da integrante" title="linkedin logo">
+                            <img src="img/linkedin.png" alt="logo com o link do linkedin da integrante"
+                                title="linkedin logo">
                         </a>
                         <a href="https://github.com/AnaCFmartins" class="link1">
                             <img src="img/github.png" alt="logo com o link do github da integrante" title="github logo">
                         </a>
                     </div>
-                </div>                
+                </div>
                 <div class="integrante">
                     <img src="img/sfg.jpeg" alt="imagem da integrante Samantha Faruolo Galdi">
                     <h3>Samantha Faruolo Galdi</h3>
@@ -74,7 +77,8 @@
                     <br>
                     <div class="link-integrante">
                         <a href="https://www.linkedin.com/in/samantha-faruolo-galdi-534422301/" class="link">
-                            <img src="img/linkedin.png" alt="logo com o link do linkedin da integrante" title="linkedin logo">
+                            <img src="img/linkedin.png" alt="logo com o link do linkedin da integrante"
+                                title="linkedin logo">
                         </a>
                         <a href="https://github.com/samyfg41" class="link1">
                             <img src="img/github.png" alt="logo com o link do github da integrante" title="github logo">
@@ -89,12 +93,13 @@
                     <br>
                     <div class="link-integrante">
                         <a href="https://www.linkedin.com/in/agatha-yun-75334535b/" class="link">
-                            <img src="img/linkedin.png" alt="logo com o link do linkedin da integrante" title="linkedin logo">
+                            <img src="img/linkedin.png" alt="logo com o link do linkedin da integrante"
+                                title="linkedin logo">
                         </a>
                         <a href="https://github.com/agathayun" class="link1">
                             <img src="img/github.png" alt="logo com o link do github da integrante" title="github logo">
                         </a>
-                    </div>    
+                    </div>
                 </div>
             </div>
         </main>
@@ -103,17 +108,24 @@
         </footer>
     </div>
     <script src="js/menu-hamburguer.js"></script>
+    <script src="js/acessibilidade.js"></script>
+    <div id="controle-fonte" aria-label="Controle de tamanho da fonte">
+        <button id="aumentarFonte" aria-label="Aumentar tamanho da fonte">A+</button>
+        <button id="diminuirFonte" aria-label="Diminuir tamanho da fonte">A-</button>
+    </div>
+
     <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const currentPage = window.location.pathname.split("/").pop();
-    if (!currentPage) return;
-    const navLinks = document.querySelectorAll('nav ul li a');
-    navLinks.forEach(link => {
-      if (link.getAttribute('href') === currentPage) {
-        link.classList.add('ativa');
-      }
-    });
-  });
-</script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentPage = window.location.pathname.split("/").pop();
+            if (!currentPage) return;
+            const navLinks = document.querySelectorAll('nav ul li a');
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('ativa');
+                }
+            });
+        });
+    </script>
 </body>
+
 </html>

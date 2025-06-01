@@ -58,13 +58,19 @@
                 </div>
                 <div class="perguntas-respostas">
                     <h3>1 - O que fazer depois que um desastre natural acontece?</h3>
-                    <p>Primeiro, certifique-se de que você e sua família estão seguros. Não volte para áreas de risco até que as autoridades confirmem que é seguro. Procure abrigo, se necessário, e entre em contato com a Defesa Civil.</p>
+                    <p>Primeiro, certifique-se de que você e sua família estão seguros. Não volte para áreas de risco
+                        até que as autoridades confirmem que é seguro. Procure abrigo, se necessário, e entre em contato
+                        com a Defesa Civil.</p>
                     <br>
                     <h3>2 - Como ajudar outras pessoas afetadas?</h3>
-                    <p>Você pode ajudar oferecendo abrigo, doando alimentos, roupas, água e outros itens de necessidade. Também pode colaborar com campanhas organizadas por instituições sérias. Sempre priorize a segurança.</p>
+                    <p>Você pode ajudar oferecendo abrigo, doando alimentos, roupas, água e outros itens de necessidade.
+                        Também pode colaborar com campanhas organizadas por instituições sérias. Sempre priorize a
+                        segurança.</p>
                     <br>
                     <h3>3 - Onde buscar abrigo ou assistência após um desastre?</h3>
-                    <p>Procure os abrigos emergenciais montados pela prefeitura ou Defesa Civil. Lá você poderá receber alimentação, apoio médico e orientação sobre os próximos passos. Caso precise, entre em contato com os órgãos de assistência social da sua cidade.</p>
+                    <p>Procure os abrigos emergenciais montados pela prefeitura ou Defesa Civil. Lá você poderá receber
+                        alimentação, apoio médico e orientação sobre os próximos passos. Caso precise, entre em contato
+                        com os órgãos de assistência social da sua cidade.</p>
                 </div>
                 <button class="voltar"><a href="faq.html">Voltar</a></button>
             </div>
@@ -73,18 +79,26 @@
             <p>©2025 Alerta Seguro - Todos os direitos reservados.</p>
         </footer>
     </div>
+    <div id="controle-fonte" aria-label="Controle de tamanho da fonte">
+        <button id="aumentarFonte" aria-label="Aumentar tamanho da fonte">A+</button>
+        <button id="diminuirFonte" aria-label="Diminuir tamanho da fonte">A-</button>
+    </div>
+
     <script src="js/menu-hamburguer.js"></script>
+
+    <script src="js/acessibilidade.js"></script>
     <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const currentPage = window.location.pathname.split("/").pop();
-    if (!currentPage) return;
-    const navLinks = document.querySelectorAll('nav ul li a');
-    navLinks.forEach(link => {
-      if (link.getAttribute('href') === currentPage) {
-        link.classList.add('ativa');
-      }
-    });
-  });
-</script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentPage = window.location.pathname.split("/").pop();
+            if (!currentPage) return;
+            const navLinks = document.querySelectorAll('nav ul li a');
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('ativa');
+                }
+            });
+        });
+    </script>
 </body>
+
 </html>

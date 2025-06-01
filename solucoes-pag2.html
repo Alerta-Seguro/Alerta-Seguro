@@ -53,21 +53,29 @@
         </header>
         <main id="fundo">
             <div class="infOcorrencias">
-                    <div class="ocorrido">
-                        <h3>Tempestades e Vendavais</h3>
-                        <img src="img/tempestade.png" alt="imagem de raios">
-                        <p>Tempestades e vendavais são ventos fortes acompanhados de muita chuva, que podem derrubar árvores, postes e causar danos. Em tempestades, fique dentro de casa, longe de janelas, e evite usar aparelhos elétricos. Não saia até o tempo melhorar e tenha lanternas e baterias extras por perto para emergências.</p>
-                    </div>
-                    <div class="ocorrido">
-                        <h3>Ondas de Calor</h3>
-                        <img src="img/ondas-calor.png" alt="imagem de cidade com cores que demonstram a alta onda de calor">
-                        <p>São períodos prolongados de temperaturas muito altas, que podem afetar a saúde, principalmente de crianças, idosos e pessoas com doenças. Durante ondas de calor, evite exposição ao sol nas horas mais quentes, beba bastante água e procure lugares frescos ou com sombra.</p>
-                    </div>
-                    <div class="ocorrido">
-                        <h3>Incêndios Florestais</h3>
-                        <img src="img/queimadas.png" alt="imagem de incêndio florestal">
-                        <p>Incêndios florestais são queimadas que se espalham rapidamente em florestas e áreas verdes, destruindo plantas, animais e às vezes casas. Se houver incêndio, não se aproxime do fogo e siga as rotas de evacuação. Cubra o nariz e a boca com um pano úmido para não respirar fumaça. Avise os bombeiros e ajude a proteger sua casa, retirando materiais que podem pegar fogo.</p>
-                    </div>
+                <div class="ocorrido">
+                    <h3>Tempestades e Vendavais</h3>
+                    <img src="img/tempestade.png" alt="imagem de raios">
+                    <p>Tempestades e vendavais são ventos fortes acompanhados de muita chuva, que podem derrubar
+                        árvores, postes e causar danos. Em tempestades, fique dentro de casa, longe de janelas, e evite
+                        usar aparelhos elétricos. Não saia até o tempo melhorar e tenha lanternas e baterias extras por
+                        perto para emergências.</p>
+                </div>
+                <div class="ocorrido">
+                    <h3>Ondas de Calor</h3>
+                    <img src="img/ondas-calor.png" alt="imagem de cidade com cores que demonstram a alta onda de calor">
+                    <p>São períodos prolongados de temperaturas muito altas, que podem afetar a saúde, principalmente de
+                        crianças, idosos e pessoas com doenças. Durante ondas de calor, evite exposição ao sol nas horas
+                        mais quentes, beba bastante água e procure lugares frescos ou com sombra.</p>
+                </div>
+                <div class="ocorrido">
+                    <h3>Incêndios Florestais</h3>
+                    <img src="img/queimadas.png" alt="imagem de incêndio florestal">
+                    <p>Incêndios florestais são queimadas que se espalham rapidamente em florestas e áreas verdes,
+                        destruindo plantas, animais e às vezes casas. Se houver incêndio, não se aproxime do fogo e siga
+                        as rotas de evacuação. Cubra o nariz e a boca com um pano úmido para não respirar fumaça. Avise
+                        os bombeiros e ajude a proteger sua casa, retirando materiais que podem pegar fogo.</p>
+                </div>
             </div>
             <div class="pag-ant">
                 <button class="bt">
@@ -82,18 +90,24 @@
         </footer>
     </div>
     <script src="js/menu-hamburguer.js"></script>
+    <script src="js/acessibilidade.js"></script>
+    <div id="controle-fonte" aria-label="Controle de tamanho da fonte">
+        <button id="aumentarFonte" aria-label="Aumentar tamanho da fonte">A+</button>
+        <button id="diminuirFonte" aria-label="Diminuir tamanho da fonte">A-</button>
+    </div>
+
     <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const currentPage = window.location.pathname.split("/").pop();
-    if (!currentPage) return;
-    const navLinks = document.querySelectorAll('nav ul li a');
-    navLinks.forEach(link => {
-      if (link.getAttribute('href') === currentPage) {
-        link.classList.add('ativa');
-      }
-    });
-  });
-</script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentPage = window.location.pathname.split("/").pop();
+            if (!currentPage) return;
+            const navLinks = document.querySelectorAll('nav ul li a');
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('ativa');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

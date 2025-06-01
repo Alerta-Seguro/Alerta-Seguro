@@ -54,11 +54,13 @@
         <main id="fundo">
             <div id="quadro">
                 <div class="titulo">
-                <h1>Prevenção e preparação</h1>
-            </div>
+                    <h1>Prevenção e preparação</h1>
+                </div>
                 <div class="perguntas-respostas">
                     <h3>1 - O que posso fazer para me preparar para um desastre natural?</h3>
-                    <p>Informe-se sobre os riscos da sua região, tenha um plano de emergência para sua família e mantenha um kit com itens essenciais (água, alimentos, documentos, lanterna, etc.). Fique sempre aos alertas oficiais.</p>
+                    <p>Informe-se sobre os riscos da sua região, tenha um plano de emergência para sua família e
+                        mantenha um kit com itens essenciais (água, alimentos, documentos, lanterna, etc.). Fique sempre
+                        aos alertas oficiais.</p>
                     <h3>2 - Como montar um kit de emergência?</h3>
                     <p>O kit deve ter:
                         <li>Água potável e alimentos não perecíveis.</li>
@@ -69,7 +71,8 @@
                         <li>Máscaras e álcool em gel.</li>
                     </p>
                     <h3>3 - Como saber quando evacuar minha casa?</h3>
-                    <p>Siga as orientações das autoridades locais. Em caso de alertas de evacuação, saia rapidamente, levando o kit de emergência. Nunca espere o desastre piorar para sair.</p> 
+                    <p>Siga as orientações das autoridades locais. Em caso de alertas de evacuação, saia rapidamente,
+                        levando o kit de emergência. Nunca espere o desastre piorar para sair.</p>
                 </div>
                 <button class="voltar"><a href="faq.html">Voltar</a></button>
             </div>
@@ -78,19 +81,25 @@
             <p>©2025 Alerta Seguro - Todos os direitos reservados.</p>
         </footer>
     </div>
+    <div id="controle-fonte" aria-label="Controle de tamanho da fonte">
+        <button id="aumentarFonte" aria-label="Aumentar tamanho da fonte">A+</button>
+        <button id="diminuirFonte" aria-label="Diminuir tamanho da fonte">A-</button>
+    </div>
+
     <script src="js/menu-hamburguer.js"></script>
+    <script src="js/acessibilidade.js"></script>
     <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const currentPage = window.location.pathname.split("/").pop();
-    if (!currentPage) return;
-    const navLinks = document.querySelectorAll('nav ul li a');
-    navLinks.forEach(link => {
-      if (link.getAttribute('href') === currentPage) {
-        link.classList.add('ativa');
-      }
-    });
-  });
-</script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentPage = window.location.pathname.split("/").pop();
+            if (!currentPage) return;
+            const navLinks = document.querySelectorAll('nav ul li a');
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('ativa');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

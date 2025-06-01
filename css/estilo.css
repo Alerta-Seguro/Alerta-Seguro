@@ -1,51 +1,61 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-#wrapper{
+
+
+#wrapper {
     min-width: 100%;
     min-height: 100vh;
     line-height: 1.6;
 }
-.container{
+
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 10px;
 }
-header{
+
+header {
     height: 100px;
     background-color: #fff;
     color: #1F7286;
     padding: 5px 10px;
 }
-header .logo img{
+
+header .logo img {
     height: 83.6px;
-    left:0;
+    left: 0;
     width: auto;
     align-items: center;
 }
-header .nav-links ul{
+
+header .nav-links ul {
     list-style: none;
     display: flex;
 }
-header .nav-links ul li{
+
+header .nav-links ul li {
     margin-left: 20px;
 }
-header .nav-links ul li a{
+
+header .nav-links ul li a {
     color: #1F7286;
     text-decoration: none;
     padding: 20px 22px;
     transition: background .3s;
 }
-header .nav-links ul li a:hover{
+
+header .nav-links ul li a:hover {
     background-color: #1F7286;
     color: #fff;
     border-radius: 5px;
 }
-#fundo{
+
+#fundo {
     background-image: url('../img/banner-clean.png');
     background-size: cover;
     background-position: center;
@@ -58,11 +68,12 @@ header .nav-links ul li a:hover{
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
 }
-footer{
+
+footer {
     width: 100%;
-    height:80px;
+    height: 80px;
     background: #fff;
     color: #1F7286;
     font-size: 18px;
@@ -71,44 +82,48 @@ footer{
     align-items: center;
     padding: 1rem;
 }
-footer p{
+
+footer p {
     text-align: center;
 }
 
 /****ESTILO LINK DE NAVEGAÇÃO***/
 a.ativa {
-  color: #e63946;
-  font-weight: bold;
-  text-decoration: underline;
+    color: #e63946;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 
 /*******/
 /*index*/
 /*******/
-#home{
+#home {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
-.frase{
+
+.frase {
     margin: auto;
     padding: 10px;
     justify-content: flex-start;
     width: 40%;
     align-items: center;
 }
-.frase img{
+
+.frase img {
     width: 100%;
     height: auto;
     max-width: 100%;
 }
-.conteudo{
+
+.conteudo {
     margin: auto;
     background: rgba(252, 252, 252, 0.85);
-    color:#000;
+    color: #000;
     padding: 20px;
     border-radius: 10px;
     justify-content: flex-end;
@@ -123,15 +138,16 @@ a.ativa {
 /**********/
 /*solucoes*/
 /**********/
-.infOcorrencias{
+.infOcorrencias {
     padding: 15px;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.ocorrido{
+
+.ocorrido {
     flex: 1;
-    color: #000; 
+    color: #000;
     padding: 20px;
     margin: 10px;
     background: rgba(252, 252, 252, 0.85);
@@ -144,32 +160,38 @@ a.ativa {
     text-align: center;
     height: auto;
 }
-.ocorrido h3{
+
+.ocorrido h3 {
     margin: 0;
     font-size: 26px;
 }
-.ocorrido img{
+
+.ocorrido img {
     width: 250px;
     height: 150px;
     border-radius: none;
     object-fit: cover;
     margin-bottom: 15px;
 }
-.ocorrido p{
+
+.ocorrido p {
     margin: 6px 0 0;
     font-size: 18px;
     color: #000;
 }
-.ocorrido:hover{
+
+.ocorrido:hover {
     transform: translateY(-5px);
 }
-.prox-pag{
+
+.prox-pag {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 40px 0 20px;
 }
-.bt{
+
+.bt {
     border: none;
     border-radius: 50%;
     padding: 15px;
@@ -178,15 +200,18 @@ a.ativa {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease;
 }
-.bt img{
+
+.bt img {
     width: 90px;
     height: 90px;
     display: block;
 }
-.bt:hover{
+
+.bt:hover {
     transform: translateX(-5px);
 }
-.bt1{
+
+.bt1 {
     border: none;
     border-radius: 50%;
     padding: 15px;
@@ -195,47 +220,54 @@ a.ativa {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease;
 }
-.bt1 img{
+
+.bt1 img {
     width: 90px;
     height: 90px;
     display: block;
 }
-.bt1:hover{
+
+.bt1:hover {
     transform: translateX(5px);
 }
+
 /*****/
 /*faq*/
 /*****/
-.faq{
+.faq {
     justify-content: center;
     padding: 100px;
     width: 50%;
 }
-.faq-itens{
+
+.faq-itens {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 100px;
 }
-.faq-itens a{
+
+.faq-itens a {
     background: rgba(252, 252, 252, 0.85);
     text-decoration: none;
-    color:#000;
+    color: #000;
     font-weight: bold;
     font-size: 25px;
     display: block;
     border-radius: 4px;
     padding: 10px;
 }
-.faq-itens a:hover{
+
+.faq-itens a:hover {
     background-color: rgba(0, 0, 0, 0.75);
-    color:#fff;
+    color: #fff;
 }
+
 /*************/
 /*faq-paginas*/
 /*************/
-#quadro{
+#quadro {
     display: flex;
     flex-direction: column;
     height: 80vh;
@@ -244,14 +276,16 @@ a.ativa {
     justify-content: center;
     align-items: center;
 }
-.titulo{
+
+.titulo {
     background: rgba(252, 252, 252, 0.75);
     color: #000;
     padding: 5px 10px;
     border-radius: 10px;
     text-align: center;
 }
-.perguntas-respostas{
+
+.perguntas-respostas {
     text-align: center;
     background: rgba(252, 252, 252, 0.75);
     color: #000;
@@ -260,7 +294,8 @@ a.ativa {
     padding: 10px 20px;
     font-size: 16px;
 }
-.voltar{
+
+.voltar {
     margin-top: 10px;
     height: 40px;
     width: 10%;
@@ -272,7 +307,8 @@ a.ativa {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.voltar a{
+
+.voltar a {
     padding: 5px 10px;
     border-radius: 4px;
     color: #000;
@@ -281,27 +317,31 @@ a.ativa {
     display: block;
     font-size: 16px;
 }
-.voltar a:hover{
+
+.voltar a:hover {
     color: #fff;
 }
-.voltar:hover{
+
+.voltar:hover {
     margin-top: 10px;
     height: 40px;
     width: 10%;
     background-color: rgba(0, 0, 0, 0.75)
 }
+
 /********/
 /*alerta*/
 /********/
-#alerta{
+#alerta {
     padding: 15px;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.conteudo1{
-    flex:1;
-    color:#000;
+
+.conteudo1 {
+    flex: 1;
+    color: #000;
     padding: 20px;
     margin: 10px;
     background: rgba(252, 252, 252, 0.75);
@@ -313,7 +353,8 @@ a.ativa {
     text-align: center;
     align-items: center;
 }
-.descricao{
+
+.descricao {
     padding: 30px;
     width: 100%;
     display: flex;
@@ -322,13 +363,16 @@ a.ativa {
     align-items: center;
     justify-content: center;
 }
-.descricao h3{
+
+.descricao h3 {
     font-size: 24px;
 }
-.descricao p{
+
+.descricao p {
     font-size: 16px;
 }
-.frmAlerta{
+
+.frmAlerta {
     padding: 30px;
     width: 100%;
     display: flex;
@@ -337,13 +381,15 @@ a.ativa {
     align-items: center;
     justify-content: center;
 }
-#alarme label{
+
+#alarme label {
     font-weight: bold;
     text-align: start;
 }
+
 #alarme input[type=text],
 #alarme input[type=tel],
-#alarme select{
+#alarme select {
     width: 100%;
     height: 35px;
     border: 1px solid #000;
@@ -351,7 +397,8 @@ a.ativa {
     padding: 8px 60px;
     font-size: 14px;
 }
-.enviar{
+
+.enviar {
     margin-top: 20px;
     height: 40px;
     width: 40%;
@@ -364,63 +411,71 @@ a.ativa {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.enviar:hover{
+
+.enviar:hover {
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
 }
+
 .modal {
-  display: none; 
-  position: fixed;
-  z-index: 9999; 
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
-  justify-content: center;
-  align-items: center;
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
 }
+
 .modal-content {
-  background-color: #fff;
-  padding: 20px 30px;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  width: 55%;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 55%;
 }
-.modal-content h2{
+
+.modal-content h2 {
     font-size: 24px;
 }
-.modal-content p{
+
+.modal-content p {
     font-size: 20px;
     font-weight: bold;
 }
+
 .modal-content button {
-  margin-top: 15px;
-  padding: 8px 16px;
-  border: none;
-  background-color: #1F7286;
-  color: #fff;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
+    margin-top: 15px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #1F7286;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
 }
+
 .modal-content button:hover {
-  background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 /*********/
 /*Contato*/
 /*********/
-#contato{
+#contato {
     padding: 15px;
     width: 95%;
     display: flex;
     justify-content: space-between;
 }
-.lado-a-lado{
-    flex:1;
-    color:#000;
+
+.lado-a-lado {
+    flex: 1;
+    color: #000;
     padding: 20px;
     margin: 10px;
     background: rgba(252, 252, 252, 0.85);
@@ -431,7 +486,8 @@ a.ativa {
     flex-direction: column;
     align-items: center;
 }
-.fale{
+
+.fale {
     padding: 10px;
     width: 100%;
     display: flex;
@@ -441,52 +497,63 @@ a.ativa {
     justify-content: center;
     text-align: center;
 }
-.fale h1{
+
+.fale h1 {
     font-size: 24px;
 }
-.fale p{
+
+.fale p {
     font-size: 16px;
 }
-.e-mail{
+
+.e-mail {
     padding: 30px;
     width: 100%;
     display: flex;
     border-radius: 10px;
     flex-direction: column;
 }
-.e-mail h1{
+
+.e-mail h1 {
     text-align: center;
     font-size: 24px;
 }
-.e-mail p{
+
+.e-mail p {
     font-size: 16px;
     text-align: start;
 }
-.mensagem{
+
+.mensagem {
     padding: 10px;
     width: 100%;
     display: flex;
     border-radius: 10px;
     flex-direction: column;
 }
-.mensagem h2{
+
+.mensagem h2 {
     text-align: center;
 }
-.mensagem p{
+
+.mensagem p {
     text-align: start;
 }
-#frmMensagem{
+
+#frmMensagem {
     justify-content: center;
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-#frmMensagem label{
+
+#frmMensagem label {
     text-align: start;
 }
+
 #frmMensagem input[type=text],
-#frmMensagem textarea{
+#frmMensagem textarea {
     width: 100%;
     padding: 10px;
     font-size: 14px;
@@ -494,7 +561,8 @@ a.ativa {
     border-radius: 5px;
     resize: none;
 }
-#frmMensagem .enviar1{
+
+#frmMensagem .enviar1 {
     display: block;
     margin: 20px auto;
     height: 40px;
@@ -507,63 +575,71 @@ a.ativa {
     border-radius: 4px;
     transition: background-color 0.3s ease;
 }
-#frmMensagem .enviar1:hover{
+
+#frmMensagem .enviar1:hover {
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
 }
+
 .modal1 {
-  display: none; 
-  position: fixed;
-  z-index: 9999; 
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
-  justify-content: center;
-  align-items: center;
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
 }
+
 .modal-content1 {
-  background-color: #fff;
-  padding: 20px 30px;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  width: 50%;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 50%;
 }
-.modal-content1 h2{
+
+.modal-content1 h2 {
     font-size: 24px;
 }
-.modal-content1 p{
+
+.modal-content1 p {
     font-size: 20px;
     font-weight: bold;
 }
+
 .modal-content1 button {
-  margin-top: 15px;
-  padding: 8px 16px;
-  border: none;
-  background-color: #1F7286;
-  color: #fff;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
+    margin-top: 15px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #1F7286;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
 }
+
 .modal-content1 button:hover {
-  background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 /*************/
 /*integrantes*/
 /*************/
-.integrantes{
+.integrantes {
     padding: 15px;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.integrante{
+
+.integrante {
     flex: 1;
-    color: #000; 
+    color: #000;
     padding: 20px;
     margin: 10px;
     background: rgba(252, 252, 252, 0.85);
@@ -576,7 +652,8 @@ a.ativa {
     text-align: center;
     height: 550px;
 }
-.integrante img{
+
+.integrante img {
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -584,36 +661,81 @@ a.ativa {
     object-fit: cover;
     margin-bottom: 15px;
 }
-.integrante h3{
+
+.integrante h3 {
     margin: 0;
     font-size: 26px;
 }
-.integrante p{
+
+.integrante p {
     margin: 6px 0 0;
     font-size: 18px;
     color: #000;
 }
-.link-integrante{
+
+.link-integrante {
     display: flex;
     flex-direction: row;
     gap: 10px;
     justify-content: center;
     align-items: center;
 }
-.link-integrante img{
+
+.link-integrante img {
     width: 40px;
     height: 40px;
     object-fit: cover;
     border-radius: 8px;
 }
-.link:hover{
+
+.link:hover {
     transform: translateY(-5px);
 }
-.link1:hover{
+
+.link1:hover {
     transform: translateY(-5px);
 }
+
 a.ativa {
-  color: #e63946;
-  font-weight: bold;
-  text-decoration: underline;
+    color: #e63946;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/***acessibilidade****/
+/*** Estilo do Controle de Acessibilidade ***/
+#controle-fonte {
+    position: fixed;
+    bottom: 20px; /* agora está embaixo */
+    right: 20px;
+    z-index: 1000;
+    background-color: #ffffffcc; /* branco semi-transparente */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#controle-fonte button {
+    background-color: #0057a3;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#controle-fonte button:hover {
+    background-color: #003f7f;
+    transform: scale(1.05);
+}
+
+#controle-fonte button:focus {
+    outline: 3px solid #ffd700;
+    outline-offset: 2px;
 }

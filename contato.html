@@ -75,12 +75,13 @@
                     <div class="mensagem">
                         <h2>Mensagem Direta:</h2>
                         <br>
-                        <p>Preencha o campo abaixo e nos envie sua mensagem. Nossa equipe entrará em contato com você em breve.</p>
-                    </div>    
+                        <p>Preencha o campo abaixo e nos envie sua mensagem. Nossa equipe entrará em contato com você em
+                            breve.</p>
+                    </div>
                     <form name="frmMensagem" id="frmMensagem">
                         <label>Informe o seu E-mail:
                             <br>
-                            <input type="text" name="informeEmail" id="informeEmail"> 
+                            <input type="text" name="informeEmail" id="informeEmail">
                         </label>
                         <label>Digite no campo abaixo a sua mensagem:
                             <br>
@@ -97,25 +98,29 @@
     </div>
     <script src="js/menu-hamburguer.js"></script>
     <script src="js/contato.js"></script>
+    <script src="js/acessibilidade.js"></script>
+    <div id="controle-fonte" aria-label="Controle de tamanho da fonte">
+        <button id="aumentarFonte" aria-label="Aumentar tamanho da fonte">A+</button>
+        <button id="diminuirFonte" aria-label="Diminuir tamanho da fonte">A-</button>
+    </div>
     <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const currentPage = window.location.pathname.split("/").pop();
-    if (!currentPage) return;
-    const navLinks = document.querySelectorAll('nav ul li a');
-    navLinks.forEach(link => {
-      if (link.getAttribute('href') === currentPage) {
-        link.classList.add('ativa');
-      }
-    });
-  });
-</script>
-
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentPage = window.location.pathname.split("/").pop();
+            if (!currentPage) return;
+            const navLinks = document.querySelectorAll('nav ul li a');
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('ativa');
+                }
+            });
+        });
+    </script>
 </body>
 <!--Modal de Envio-->
 <div id="envio-sucesso" class="modal1">
     <div class="modal-content1">
         <h2>Mensagem enviada com sucesso</h2>
-        <br> 
+        <br>
         <br>
         <img src="img/check.png">
         <br>
@@ -125,4 +130,5 @@
         <button id="fechar-modal1">Fechar</button>
     </div>
 </div>
+
 </html>
