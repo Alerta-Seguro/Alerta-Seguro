@@ -143,18 +143,25 @@
         margin: 0 auto;
         padding: 10px;
     }
+    .bt {
+        margin: 0 auto;
+        padding: 10px;
+    }
     /*FAQ*/
     .faq{
         width: 100%;
     }
-    #quadro{
-        width: 100%;
-    }
     .perguntas-respostas{
-        padding: 5px 10px;
+        padding: 5px;
+        width: 95%;
     }
-    .voltar{
-        width: 20%;
+    .voltar-pag{
+        justify-content: center;
+        margin: 30px 0;
+    }
+    .voltar {
+        margin: 0 auto;
+        padding: 10px;
     }
     /*Alerta*/
     #alerta{
@@ -321,14 +328,17 @@
     .faq{
         width: 100%;
     }
-    #quadro{
-        width: 100%;
-    }
     .perguntas-respostas{
-        padding: 5px 10px;
+        padding: 5px;
+        width: 95%;
     }
-    .voltar{
-        width: 20%;
+    .voltar-pag{
+        justify-content: center;
+        margin: 30px 0;
+    }
+    .voltar {
+        margin: 0 auto;
+        padding: 10px;
     }
     /*Alerta*/
     #alerta{

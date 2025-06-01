@@ -105,14 +105,19 @@
                 </div>
             </div>
         </main>
+        <div id="controle-fonte" aria-label="Controle de tamanho da fonte">
+            <button id="aumentarFonte" aria-label="Aumentar tamanho da fonte">A+</button>
+            <button id="diminuirFonte" aria-label="Diminuir tamanho da fonte">A-</button>
+        </div>
         <footer>
             <p>©2025 Alerta Seguro - Todos os direitos reservados.</p>
         </footer>
     </div>
-    <script src="js/menu-hamburguer.js"></script>
 
-<script src="js/acessibilidade.js"></script>
+    <script src="js/menu-hamburguer.js"></script>
+    <script src="js/acessibilidade.js"></script>
     <script src="js/cadastro.js"></script>
+    
     <div id="cdt-sucesso" class="modal">
         <!--Modal de cadastro-->
         <div class="modal-content">
@@ -127,10 +132,6 @@
             <button id="fechar-modal">Fechar</button>
         </div>
     </div>
-    <div id="controle-fonte" aria-label="Controle de tamanho da fonte">
-  <button id="aumentarFonte" aria-label="Aumentar tamanho da fonte">A+</button>
-  <button id="diminuirFonte" aria-label="Diminuir tamanho da fonte">A-</button>
-</div>
     <script>
   document.addEventListener("DOMContentLoaded", function () {
     const currentPage = window.location.pathname.split("/").pop();

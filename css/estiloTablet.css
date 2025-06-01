@@ -144,14 +144,17 @@
     .faq{
         width: 100%;
     }
-    #quadro{
+    .perguntas-respostas{
+        padding: 5px;
         width: 95%;
     }
-    .perguntas-respostas{
-        padding: 5px 10px;
+    .voltar-pag{
+        justify-content: center;
+        margin: 30px 0;
     }
-    .voltar{
-        width: 20%;
+    .voltar {
+        margin: 0 auto;
+        padding: 10px;
     }
     /*Alerta*/
     #alerta{

@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById("erroNome").innerText = "O campo Nome completo é obrigatório!";
             nomeCompleto.focus();
             valido = false;
-        } else {
+        } 
+        else {
             document.getElementById("erroNome").innerText = "";
         }
 
@@ -22,7 +23,8 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById("erroTelefone").innerText = "O campo Telefone é obrigatório!";
             if (valido) numTelefone.focus(); // foca só se ainda não focou outro
             valido = false;
-        } else {
+        } 
+        else {
             document.getElementById("erroTelefone").innerText = "";
         }
 
@@ -30,7 +32,8 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById("erroEmail").innerText = "O campo Email é obrigatório!";
             if (valido) email.focus();
             valido = false;
-        } else {
+        } 
+        else {
             document.getElementById("erroEmail").innerText = "";
         }
 
