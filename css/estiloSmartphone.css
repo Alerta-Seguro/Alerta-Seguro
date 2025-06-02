@@ -1,4 +1,4 @@
-/*Responsividade pra telas pequenas*/
+/*Responsividade pra telas extra pequenas*/
 @media screen and (max-width: 599.9px){
     .nav-links{
         display: none;
@@ -98,7 +98,10 @@
         padding: 15px;
         background-position: top;
     }
+
+    /*******/
     /*index*/
+    /*******/
     #home{
         flex-direction: column;
         gap: 5px;
@@ -127,7 +130,10 @@
         overflow-wrap: break-word;
         margin-bottom: 65px;
     }
+
+    /*********************/
     /*Páginas de Soluções*/
+    /*********************/
     .infOcorrencias{
         flex-direction: column;
     }
@@ -147,7 +153,10 @@
         margin: 0 auto;
         padding: 10px;
     }
+
+    /*****/
     /*FAQ*/
+    /*****/
     .faq{
         width: 100%;
     }
@@ -163,11 +172,17 @@
         margin: 0 auto;
         padding: 10px;
     }
+
+    /********/
     /*Alerta*/
+    /********/
     #alerta{
         flex-direction: column;
     }
+
+    /*********/
     /*Contato*/
+    /*********/
     #contato{
         width: 90%;
         flex-direction: column;
@@ -182,13 +197,25 @@
     .email{
         padding: 15px;
     }
+
+    /*************/
     /*Integrantes*/
+    /*************/
     .integrantes{
-        width: 85%;
+        width: 82.5%;
         flex-direction: column;
+    }
+    .integrante img{
+        width: 170px;
+        height: 170px;
+    }
+    .link-integrante img{
+        width: 35px;
+        height: 35px;
     }
 }
 
+/*Responsividade para telas pequenas*/
 @media (min-width: 600px) and (max-width: 767.9px){
     .nav-links{
         display: none;
@@ -324,7 +351,10 @@
         padding: 5px;
         width: 95%;
     }
+
+    /*****/
     /*FAQ*/
+    /*****/
     .faq{
         width: 100%;
     }
@@ -340,11 +370,17 @@
         margin: 0 auto;
         padding: 10px;
     }
+    
+    /********/
     /*Alerta*/
+    /********/
     #alerta{
         flex-direction: column;
     }
+
+    /*********/
     /*Contato*/
+    /*********/
     #contato{
         width: 90%;
         flex-direction: column;
@@ -359,9 +395,20 @@
     .email{
         padding: 15px;
     }
+
+    /*************/
     /*Integrantes*/
+    /*************/
     .integrantes{
         width: 80%;
         flex-direction: column;
+    }
+    .integrante img{
+        width: 175px;
+        height: 175px;
+    }
+    .link-integrante img{
+        width: 35px;
+        height: 35px;
     }
 }

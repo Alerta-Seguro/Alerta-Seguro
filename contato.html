@@ -82,11 +82,11 @@
                         <label>Informe o seu E-mail:
                             <br>
                             <input type="text" name="informeEmail" id="informeEmail">
-                        <label>Digite no campo abaixo a sua mensagem:
-                            <br>
-                            <textarea name="mensagem" id="mensagem" cols="100" rows="10"></textarea>
-                        </label>
-                        <button type="submit" onclick="validar()" class="enviar1">Enviar</button>
+                            <label>Digite no campo abaixo a sua mensagem:
+                                <br>
+                                <textarea name="mensagem" id="mensagem" cols="100" rows="10"></textarea>
+                            </label>
+                            <button type="submit" onclick="validar()" class="enviar1">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -99,9 +99,11 @@
             <p>©2025 Alerta Seguro - Todos os direitos reservados.</p>
         </footer>
     </div>
+
     <script src="js/menu-hamburguer.js"></script>
     <script src="js/contato.js"></script>
     <script src="js/acessibilidade.js"></script>
+
     <!--Modal de Envio-->
     <div id="envio-sucesso" class="modal1">
         <div class="modal-content1">
@@ -111,10 +113,13 @@
             <img src="img/check.png">
             <br>
             <br>
-            <p>Recebemos sua mensagem e em breve nossa equipe entrará em contato com você. Obrigado por nos procurar!</p>
+            <p>Recebemos sua mensagem e em breve nossa equipe entrará em contato com você. Obrigado por nos procurar!
+            </p>
             <br>
             <button id="fechar-modal1">Fechar</button>
         </div>
+    </div>
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const currentPage = window.location.pathname.split("/").pop();

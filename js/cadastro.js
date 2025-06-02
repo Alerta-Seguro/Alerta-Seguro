@@ -7,14 +7,14 @@ document.addEventListener('DOMContentLoaded', function () {
         const nomeCompleto = document.getElementById("nomeCompleto");
         const numTelefone = document.getElementById("numTelefone");
         const email = document.getElementById("email");
-
+        const regiao = document.getElementById("regiao");
         let valido = true;
 
         if (nomeCompleto.value.trim() === "") {
             document.getElementById("erroNome").innerText = "O campo Nome completo é obrigatório!";
             nomeCompleto.focus();
             valido = false;
-        } 
+        }
         else {
             document.getElementById("erroNome").innerText = "";
         }
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById("erroTelefone").innerText = "O campo Telefone é obrigatório!";
             if (valido) numTelefone.focus(); // foca só se ainda não focou outro
             valido = false;
-        } 
+        }
         else {
             document.getElementById("erroTelefone").innerText = "";
         }
@@ -32,9 +32,15 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById("erroEmail").innerText = "O campo Email é obrigatório!";
             if (valido) email.focus();
             valido = false;
-        } 
+        }
         else {
             document.getElementById("erroEmail").innerText = "";
+        }
+
+        if (select.value === "Selecione") {
+            select.setCustomValidity = "Selecione a Região";
+        } else {
+            select.setCustomValidity("");
         }
 
         return valido;

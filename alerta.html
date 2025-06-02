@@ -59,11 +59,13 @@
                         <br>
                         <br>
                         <br>
-                        <p>Fique em segurança! Ao se cadastrar, você receberá notificações antecipadas sobre riscos de desastres naturais, como enchentes, deslizamentos e tempestades, de acordo com a sua localização. A informação certa, no momento certo, pode salvar vidas.</p>
+                        <p>Fique em segurança! Ao se cadastrar, você receberá notificações antecipadas sobre riscos de
+                            desastres naturais, como enchentes, deslizamentos e tempestades, de acordo com a sua
+                            localização. A informação certa, no momento certo, pode salvar vidas.</p>
                         <br>
                         <br>
                         <br>
-                        <p>Preencha o formulário  e ative o seu alerta regional agora mesmo.</p>
+                        <p>Preencha o formulário e ative o seu alerta regional agora mesmo.</p>
                     </div>
                 </div>
                 <div class="conteudo1">
@@ -117,32 +119,36 @@
     <script src="js/menu-hamburguer.js"></script>
     <script src="js/acessibilidade.js"></script>
     <script src="js/cadastro.js"></script>
-    
+
+    <!--Modal de cadastro-->
     <div id="cdt-sucesso" class="modal">
-        <!--Modal de cadastro-->
         <div class="modal-content">
             <h2>Cadastro de Alerta realizado com sucesso!</h2>
-            <br> 
+            <br>
             <br>
             <img src="img/check.png">
             <br>
             <br>
-            <p>A partir de agora, você receberá notificações sobre desastres naturais, como inundações, queimadas e outros eventos. Também enviaremos orientações sobre como agir em cada situação para manter sua segurança.</p>
+            <p>A partir de agora, você receberá notificações sobre desastres naturais, como inundações, queimadas e
+                outros eventos. Também enviaremos orientações sobre como agir em cada situação para manter sua
+                segurança.</p>
             <br>
             <button id="fechar-modal">Fechar</button>
         </div>
     </div>
+
     <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const currentPage = window.location.pathname.split("/").pop();
-    if (!currentPage) return;
-    const navLinks = document.querySelectorAll('nav ul li a');
-    navLinks.forEach(link => {
-      if (link.getAttribute('href') === currentPage) {
-        link.classList.add('ativa');
-      }
-    });
-  });
-</script> 
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentPage = window.location.pathname.split("/").pop();
+            if (!currentPage) return;
+            const navLinks = document.querySelectorAll('nav ul li a');
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('ativa');
+                }
+            });
+        });
+    </script>
 </body>
+
 </html>

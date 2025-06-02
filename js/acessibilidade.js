@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Função para aplicar o font-size a todos os elementos filhos do conteudo
   function aplicarFontSize(tamanho) {
     // Seleciona todos os elementos filhos que podem ter texto
-    const elementos = conteudo.querySelectorAll('p, h1, h2, h3, h4, h5, h6, span, li, a, div');
+    const elementos = conteudo.querySelectorAll('p');
     elementos.forEach(el => {
       el.style.fontSize = tamanho + "px";
     });
