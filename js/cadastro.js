@@ -7,12 +7,13 @@ document.addEventListener('DOMContentLoaded', function () {
         const nomeCompleto = document.getElementById("nomeCompleto");
         const numTelefone = document.getElementById("numTelefone");
         const email = document.getElementById("email");
-        const regiao = document.getElementById("regiao");
+        const regiaoSelect = document.getElementById("regiao");
+        const regiaoSelecionada = regiaoSelect.value;
         let valido = true;
 
         if (nomeCompleto.value.trim() === "") {
             document.getElementById("erroNome").innerText = "O campo Nome completo é obrigatório!";
-            nomeCompleto.focus();
+            if(valido) nomeCompleto.focus();
             valido = false;
         }
         else {
@@ -37,10 +38,13 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById("erroEmail").innerText = "";
         }
 
-        if (select.value === "Selecione") {
-            select.setCustomValidity = "Selecione a Região";
-        } else {
-            select.setCustomValidity("");
+        if (regiaoSelecionada === "") {
+            document.getElementById("erroRegiao").innerText = "A seleção da região é obrigatória!";
+            if (valido) regiaoSelect.focus();
+            valido = false;
+        } 
+        else {
+            document.getElementById("erroRegiao").innerText = "";
         }
 
         return valido;

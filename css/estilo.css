@@ -36,6 +36,7 @@ header .logo img {
 header .nav-links ul {
     list-style: none;
     display: flex;
+    border-radius: 5px;
 }
 
 header .nav-links ul li {

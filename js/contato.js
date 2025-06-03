@@ -3,9 +3,38 @@ document.addEventListener('DOMContentLoaded', function () {
     const modal1 = document.getElementById('envio-sucesso');
     const btnFechar1 = document.getElementById('fechar-modal1');
 
+    function validar() {
+        const email = document.getElementById("informeEmail");
+        const mensagem = document.getElementById("mensagem");
+        let valido = true;
+
+        if (email.value.trim() === "") {
+            document.getElementById("emailError").innerText = "O campo Informe o seu Email é obrigatório!";
+            if (valido) email.focus();
+            valido = false;
+        }
+        else {
+            document.getElementById("emailError").innerText = "";
+        }
+
+        if (mensagem.value.trim() === "") {
+            document.getElementById("emptyMessage").innerText = "Preencha o bloco com a mensagem que quer nos enviar";
+            if(valido) mensagem.focus();
+            valido = false;
+        }
+        else{
+            document.getElementById("emptyMessage").innerText = "";
+        }
+
+        return valido;
+    }
+
     form.addEventListener('submit', function (event) {
         event.preventDefault(); // evita reload da página
 
+        if (!validar()){
+            return;
+        }
         // mostra a modal
         modal1.style.display = 'flex';
 

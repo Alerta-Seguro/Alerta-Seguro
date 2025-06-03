@@ -82,11 +82,15 @@
                         <label>Informe o seu E-mail:
                             <br>
                             <input type="text" name="informeEmail" id="informeEmail">
-                            <label>Digite no campo abaixo a sua mensagem:
-                                <br>
-                                <textarea name="mensagem" id="mensagem" cols="100" rows="10"></textarea>
-                            </label>
-                            <button type="submit" onclick="validar()" class="enviar1">Enviar</button>
+                            <span id="emailError" class="erro"></span>
+                        </label>
+                        <br>
+                        <label>Digite no campo abaixo a sua mensagem:
+                            <br>
+                            <textarea name="mensagem" id="mensagem" cols="100" rows="10"></textarea>
+                            <span id="emptyMessage" class="erro"></span>
+                        </label>
+                            <button type="submit" onclick="valide()" class="enviar1">Enviar</button>
                     </form>
                 </div>
             </div>
