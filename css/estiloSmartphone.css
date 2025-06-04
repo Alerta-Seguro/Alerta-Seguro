@@ -1,5 +1,9 @@
+/*****************************************/
 /*Responsividade pra telas extra pequenas*/
+/*****************************************/
 @media screen and (max-width: 599.9px){
+    
+    /*GERAL*/
     .nav-links{
         display: none;
     }
@@ -99,9 +103,9 @@
         background-position: top;
     }
 
-    /*******/
-    /*index*/
-    /*******/
+    /******/
+    /*Home*/
+    /******/
     #home{
         flex-direction: column;
         gap: 5px;
@@ -131,9 +135,9 @@
         margin-bottom: 65px;
     }
 
-    /*********************/
-    /*Páginas de Soluções*/
-    /*********************/
+    /**********/
+    /*Soluções*/
+    /**********/
     .infOcorrencias{
         flex-direction: column;
     }
@@ -185,9 +189,9 @@
         padding: 10px;
     }
 
-    /********/
-    /*Alerta*/
-    /********/
+    /*********/
+    /*Alertas*/
+    /*********/
     #alerta{
         flex-direction: column;
     }
@@ -227,8 +231,12 @@
     }
 }
 
+/************************************/
 /*Responsividade para telas pequenas*/
+/************************************/
 @media (min-width: 600px) and (max-width: 767.9px){
+    
+    /*Geral*/
     .nav-links{
         display: none;
     }
@@ -328,6 +336,10 @@
         padding: 15px;
         background-position: top;
     }
+
+    /******/
+    /*Home*/
+    /******/
     #home{
         flex-direction: column;
         gap: 5px;
@@ -383,9 +395,9 @@
         padding: 10px;
     }
     
-    /********/
-    /*Alerta*/
-    /********/
+    /*********/
+    /*Alertas*/
+    /*********/
     #alerta{
         flex-direction: column;
     }

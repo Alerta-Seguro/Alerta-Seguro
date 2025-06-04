@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let valido = true;
 
         if (nomeCompleto.value.trim() === "") {
-            document.getElementById("erroNome").innerText = "O campo Nome completo é obrigatório!";
+            document.getElementById("erroNome").innerText = "O preenchimento do campo Nome Completo é obrigatório!";
             if(valido) nomeCompleto.focus();
             valido = false;
         }
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         if (numTelefone.value.trim() === "") {
-            document.getElementById("erroTelefone").innerText = "O campo Telefone é obrigatório!";
+            document.getElementById("erroTelefone").innerText = "O preenchimento do campo Telefone é obrigatório!";
             if (valido) numTelefone.focus(); // foca só se ainda não focou outro
             valido = false;
         }
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         if (email.value.trim() === "") {
-            document.getElementById("erroEmail").innerText = "O campo Email é obrigatório!";
+            document.getElementById("erroEmail").innerText = "O preenchimento do campo E-mail é obrigatório!";
             if (valido) email.focus();
             valido = false;
         }
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         if (regiaoSelecionada === "") {
-            document.getElementById("erroRegiao").innerText = "A seleção da região é obrigatória!";
+            document.getElementById("erroRegiao").innerText = "A seleção da Região é obrigatória!";
             if (valido) regiaoSelect.focus();
             valido = false;
         } 

@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let valido = true;
 
         if (email.value.trim() === "") {
-            document.getElementById("emailError").innerText = "O campo Informe o seu Email é obrigatório!";
+            document.getElementById("emailError").innerText = "O campo Informe o seu E-mail é de preenchimento obrigatório!";
             if (valido) email.focus();
             valido = false;
         }

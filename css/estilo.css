@@ -1,3 +1,7 @@
+/*******/
+/*GERAL*/
+/*******/
+
 * {
     margin: 0;
     padding: 0;
@@ -69,10 +73,7 @@ header .nav-links ul li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#fundo {
-  font-size: 1em; 
+    font-size: 1em; 
 }
 
 #fundo h1 {
@@ -88,7 +89,7 @@ header .nav-links ul li a:hover {
 }
 
 #fundo a {
-  font-size: 1.57em;
+  font-size: 1.6em;
 }
 
 footer {
@@ -118,7 +119,7 @@ a.ativa {
 
 
 /*******/
-/*index*/
+/*Home*/
 /*******/
 #home {
     display: flex;
@@ -164,7 +165,7 @@ a.ativa {
 }
 
 /**********/
-/*solucoes*/
+/*Soluções*/
 /**********/
 .infOcorrencias {
     padding: 15px;
@@ -265,7 +266,7 @@ a.ativa {
 
 
 /*****/
-/*faq*/
+/*FAQ*/
 /*****/
 .faq {
     justify-content: center;
@@ -297,9 +298,9 @@ a.ativa {
     color: #fff;
 }
 
-/*************/
-/*faq-paginas*/
-/*************/
+/****************/
+/*Páginas do FAQ*/
+/****************/
 #quadro {
     display: flex;
     flex-direction: column;
@@ -362,9 +363,9 @@ a.ativa {
     transform: translateX(-5px);
 }
 
-/********/
-/*alerta*/
-/********/
+/*********/
+/*Alertas*/
+/*********/
 #alerta {
     padding: 15px;
     width: 95%;
@@ -657,7 +658,7 @@ a.ativa {
 }
 
 /*************/
-/*integrantes*/
+/*Integrantes*/
 /*************/
 .integrantes {
     padding: 15px;
@@ -732,14 +733,14 @@ a.ativa {
 }
 
 
-/***acessibilidade****/
+/***Acessibilidade****/
 /*** Estilo do Controle de Acessibilidade ***/
 #controle-fonte {
     position: fixed;
-    bottom: 20px; /* agora está embaixo */
+    bottom: 20px; 
     right: 20px;
     z-index: 1000;
-    background-color: #ffffffcc; /* branco semi-transparente */
+    background-color: #ffffffcc; 
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     padding: 10px 12px;
