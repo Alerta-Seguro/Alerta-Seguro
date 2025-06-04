@@ -145,15 +145,27 @@
         justify-content: center;
         margin: 30px 0;
     }
-    .bt1 {
-        margin: 0 auto;
-        padding: 10px;
-    }
     .bt {
         margin: 0 auto;
         padding: 10px;
     }
-
+    .bt img{
+        width: 80px;
+        height: 80px;
+    }
+    .pag-ant{
+        justify-content: center;
+        margin: 30px 0;
+    }
+    .bt1 {
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .bt1 img{
+        width: 80px;
+        height: 80px;
+    }
+    
     /*****/
     /*FAQ*/
     /*****/

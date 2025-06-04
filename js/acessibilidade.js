@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     elementos.forEach(el => {
       el.style.fontSize = tamanho + "px";
     });
+    conteudo.style.fontSize = tamanho + "px";
   }
 
   // Aplica o tamanho inicial

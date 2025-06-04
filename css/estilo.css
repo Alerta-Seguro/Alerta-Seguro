@@ -71,6 +71,26 @@ header .nav-links ul li a:hover {
     align-items: center;
 }
 
+#fundo {
+  font-size: 1em; 
+}
+
+#fundo h1 {
+  font-size: 2em;
+}
+
+#fundo h2 {
+  font-size: 1.75em;
+}
+
+#fundo h3 {
+  font-size: 1.5em;
+}
+
+#fundo a {
+  font-size: 1.57em;
+}
+
 footer {
     width: 100%;
     height: 80px;
@@ -184,7 +204,6 @@ a.ativa {
 
 .ocorrido p {
     margin: 6px 0 0;
-    font-size: 18px;
     color: #000;
 }
 
@@ -210,15 +229,21 @@ a.ativa {
 }
 
 .bt img {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     display: block;
 }
 
 .bt:hover {
-    transform: translateX(-5px);
+    transform: translateX(5px);
 }
 
+.pag-ant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 20px;
+}
 .bt1 {
     border: none;
     border-radius: 50%;
@@ -228,16 +253,16 @@ a.ativa {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease;
 }
-
 .bt1 img {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     display: block;
 }
 
 .bt1:hover {
-    transform: translateX(5px);
+    transform: translateX(-5px);
 }
+
 
 /*****/
 /*faq*/
@@ -342,7 +367,7 @@ a.ativa {
 /********/
 #alerta {
     padding: 15px;
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: space-between;
 }
@@ -376,10 +401,6 @@ a.ativa {
     font-size: 24px;
 }
 
-.descricao p {
-    font-size: 16px;
-}
-
 .frmAlerta {
     padding: 30px;
     width: 100%;
@@ -403,7 +424,6 @@ a.ativa {
     border: 1px solid #000;
     border-radius: 5px;
     padding: 8px 60px;
-    font-size: 14px;
 }
 
 .enviar {
@@ -558,6 +578,7 @@ a.ativa {
 
 #frmMensagem label {
     text-align: start;
+    font-weight: bold;
 }
 
 #frmMensagem input[type=text],
