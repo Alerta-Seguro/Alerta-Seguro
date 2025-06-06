@@ -9,10 +9,9 @@
     font-family: Arial, sans-serif;
 }
 
-
 #wrapper {
     min-width: 100%;
-    min-height: 100vh;
+    min-height: auto;
     line-height: 1.6;
 }
 
@@ -468,7 +467,7 @@ a.ativa {
     width: 55%;
 }
 
-.modal-content h2 {
+.modal-content h3 {
     font-size: 24px;
 }
 
@@ -633,7 +632,7 @@ a.ativa {
     width: 50%;
 }
 
-.modal-content1 h2 {
+.modal-content1 h3 {
     font-size: 24px;
 }
 

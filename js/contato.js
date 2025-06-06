@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const modal1 = document.getElementById('envio-sucesso');
     const btnFechar1 = document.getElementById('fechar-modal1');
 
-    function validar() {
+    function valide() {
         const email = document.getElementById("informeEmail");
         const mensagem = document.getElementById("mensagem");
         let valido = true;
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
     form.addEventListener('submit', function (event) {
         event.preventDefault(); // evita reload da página
 
-        if (!validar()){
+        if (!valide()){
             return;
         }
         // mostra a modal

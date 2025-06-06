@@ -196,6 +196,18 @@
         flex-direction: column;
     }
 
+    .modal-content{
+        width: 75%;
+    }
+
+    .modal-content h3{
+        font-size: 20px;
+    }
+
+    .modal-content p{
+        font-size: 20px;
+    }
+
     /*********/
     /*Contato*/
     /*********/
@@ -213,7 +225,16 @@
     .email{
         padding: 15px;
     }
-
+    .modal-content1{
+        width: 65%;
+    }
+    .modal-content1 h3{
+        font-size: 20px;
+    }
+    .modal-content1 p{
+        font-size: 16px;
+    }
+    
     /*************/
     /*Integrantes*/
     /*************/
